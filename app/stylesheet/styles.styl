@@ -1,0 +1,51 @@
+@import 'helpers/index.styl';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  font-size: $baseFont;
+}
+body {
+  font-family: 'Maven Pro', Arial, serif;
+  font-weight: 400;
+  color: $greyStrong;
+  font-size: remify(14px);
+  line-height: 1.42857143;
+  background-color: #ffffff;  
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+input::-webkit-input-placeholder {
+   color: #999;
+}
+
+input::-moz-placeholder {
+   color: #999;
+}
+
+input:-ms-input-placeholder {
+   color: #999;
+}
+
+#content {
+  padding: 10px 0 50px 0;
+}
+.fake-select {
+  width: 235px;
+  border: 1px solid #efefef;
+  border-radius();
+}
+.fake-select:before {
+  float: right;
+  position: relative;
+  top: 2px;
+  padding: 3px 2px 2px 3px;
+  background: $greyStrong;
+  color: #fff;
+  border-radius();
+}

@@ -1,0 +1,63 @@
+@import '../helpers/index.styl'
+
+#footer {
+
+    border-top: 1px solid $greyBorders;
+    remify(13px);
+    .footer_view {
+        padding: 40px 0 35px 0;
+        font-size: remify(15px);
+    }
+
+    .social {
+        float: left;
+        li {
+            width: 38px;
+            display: inline-block;
+            a {
+                text-align: center;
+                display: block;
+                color: $white;
+                padding: 7px 0 10px;
+            }
+        }
+        .fb {
+            background: $blueFacebook;
+        }
+        .tw {
+            background: $cyanTwitter;
+        }
+    }
+
+    .menu {
+        float: left;
+        margin: 5px 0 0 30px;
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            &::before {
+                content: '-';
+                padding-right: 10px;
+            }
+            &:first-child {
+                &::before {
+                    content: '';
+                }
+            }
+            a {
+                color: $greyStrong;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .copy {
+        float: right;
+        margin-top: 5px;
+        text-transform: uppercase;
+        color: $greyLight;
+    }
+
+}

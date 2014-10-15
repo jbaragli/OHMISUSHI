@@ -1,0 +1,95 @@
+@import '../helpers/index.styl'
+
+#header {
+    .header_view {
+        font-size: remify(15px);
+        padding: 40px 0 15px 0;
+        border-bottom: 1px solid $greyBorders;
+    }
+    p {
+        margin: 0;
+    }
+    .logo {
+        float: left;
+        margin: 0;
+        width: 116px;
+        text-indent: -9999px;
+        background: url(../images/logo.png);
+        a {
+            height: 53px;
+            display: block; 
+        }
+    }
+    nav {
+        display: inline-block;
+        margin: 15px 0 0 30px;
+        height: 40px;
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 0 10px;
+            font-size: remify(20px);
+            a {
+                display: inline-block;
+                padding: 5px 0; 
+                color: $red;
+                &.active,
+                &:hover {
+                    color: #000;
+                    border-bottom: 2px solid $red;
+                }
+            }
+        }
+    }
+    .phones {
+        float: left;
+        width: 50%;
+        direction: rtl;
+        font-weight: 500;
+        margin-top: 10px;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 12px;
+            left: 95px;
+            font-size: 22px;
+        }
+        span {
+            color: red;
+            &.white-space:after {
+                content: '';
+                float: right;
+                width: 3px;
+                height: 5px;
+                line-height: 0;
+                display: inline-block;
+            }
+        }
+    }
+    .checkout {
+        float: right;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        .price {
+            float: left;
+            color: $red;
+            &::before {
+                color: $greyStrong;
+                padding-right: 5px;
+                font-size: 18px;
+                top: 3px;
+            }
+        }
+        .check {
+            float: right;
+            padding-right: 10px;
+            font-size: 15px;
+            padding-top: 1px;
+        }
+    }
+}

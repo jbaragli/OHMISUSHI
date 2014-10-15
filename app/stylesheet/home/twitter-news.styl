@@ -1,0 +1,40 @@
+@import '../helpers/index.styl';
+
+.twitter_news_view {
+    background: $greyBorders;
+    padding: 5px 0;
+
+    .noticias {
+        float: left;
+        font-size: remify(15px);
+        display: inline-block;
+    }
+
+    .icon-twitter::before {
+        color: $cyanTwitter;
+        font-size: remify(16px);
+        padding-right: 5px;
+    }
+
+    .list-twits {
+        float: left;
+        margin-left: 20px;
+        width: 975px;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-style: italic;
+        li {
+            color: $greyLight;
+            display: inline-block;
+            text-indent: 0;
+            -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    }
+
+}
